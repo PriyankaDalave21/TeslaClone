@@ -2,7 +2,7 @@ import { View, Text, Pressable } from 'react-native'
 import React from 'react'
 import styles from './styles';
 
-const StyledButton = (props) => {
+const StyledButtons = (props) => {
   // const type = props.type;
   // const content = props.content;
   // const onPress = props.onPress;
@@ -23,4 +23,4 @@ const StyledButton = (props) => {
   )
 }
 
-export default StyledButton;
+export default StyledButtons;

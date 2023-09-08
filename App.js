@@ -1,24 +1,24 @@
-import { View, Text, StyleSheet, StatusBar, ImageBackground } from 'react-native';
+
 import React from 'react';
-import CarItem from './components/CarItem';
-
-
-const App = () => {
+import { StyleSheet, View } from 'react-native';
+// import CarsList from './components/CarsList';
+import Header from './components/Header';
+import CarsList from './components/CarList';
+export default function App() {
   return (
-    <View style={styles.conatiner}>
-<CarItem/>
-      <StatusBar style="auto" />
+    <View style={styles.container}>
+      <Header />
+      <CarsList />
+      {/* <StatusBar style="auto" /> */}
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
-  conatiner: {
+  container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: 'center'
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
- 
-})
-export default App;
+});
